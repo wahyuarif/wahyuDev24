@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        :root{
+            --clr-light:rgb(248, 156, 81);
+            --clr-dark:rgb(255, 116, 3);
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: var(--clr-light);
+            border: 10px solid var(--clr-dark);
+            border-radius: 10px;
+        }
+        .container{
+            width: 80%;
+            height: 100vh;
+            border: 2px solid var(--clr-dark);
+            border-radius: 10px;
+            margin: 0 auto;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+    </style>
+
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    
+    
+</body>
+</html>
